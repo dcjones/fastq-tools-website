@@ -1,0 +1,99 @@
+<!-- Creator     : groff version 1.19.2 -->
+<!-- CreationDate: Sun Dec  9 20:19:40 2012 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets/man.css">
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p     { margin-top: 0; margin-bottom: 0; }
+       pre   { margin-top: 0; margin-bottom: 0; }
+       table { margin-top: 0; margin-bottom: 0; }
+</style>
+<title>FASTQ-UNIQ</title>
+
+</head>
+<body>
+
+<h1 align=center>FASTQ-UNIQ</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+
+<hr>
+
+
+<a name="NAME"></a>
+<h2>NAME</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">fastq-uniq -
+filter out reads with identical sequences</p>
+
+<a name="SYNOPSIS"></a>
+<h2>SYNOPSIS</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>fastq-uniq
+[OPTION]... PATTERN [FILE]...</b></p>
+
+<a name="DESCRIPTION"></a>
+<h2>DESCRIPTION</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Print a
+non-redundant list of occurring sequences, removing all
+duplicate sequences. Output is in FASTA format (as quality
+strings are ignored), with sequence identifiers formatted
+as,</p>
+
+
+<p style="margin-left:11%; margin-top: 1em">&gt;uniq-read-N
+(M copies)</p>
+
+<p style="margin-left:11%; margin-top: 1em">Where, N in a
+unique number assigned to the sequence and M is the number
+of copies occurring.</p>
+
+<p style="margin-left:11%; margin-top: 1em">One ore more
+FILEs may be specified, otherwise input is read from
+standard input. Input files may be gziped.</p>
+
+<a name="OPTIONS"></a>
+<h2>OPTIONS</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>&minus;v</b>,
+<b>&minus;&minus;verbose</b></p>
+
+<p style="margin-left:22%;">Print status updates along the
+way.</p>
+
+<p style="margin-left:11%;"><b>&minus;h</b>,
+<b>&minus;&minus;help</b></p>
+
+<p style="margin-left:22%;">Output a help message and
+exit.</p>
+
+<p style="margin-left:11%;"><b>&minus;V</b>,
+<b>&minus;&minus;version</b></p>
+
+<p style="margin-left:22%;">Output version information and
+exit.</p>
+
+<a name="AUTHOR"></a>
+<h2>AUTHOR</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Written by
+Daniel C. Jones &lt;dcjones@cs.washington.edu&gt;</p>
+<hr>
+</body>
+</html>

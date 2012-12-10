@@ -1,0 +1,149 @@
+<!-- Creator     : groff version 1.19.2 -->
+<!-- CreationDate: Sun Dec  9 20:03:56 2012 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets/man.css">
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p     { margin-top: 0; margin-bottom: 0; }
+       pre   { margin-top: 0; margin-bottom: 0; }
+       table { margin-top: 0; margin-bottom: 0; }
+</style>
+<title>FASTQ-SAMPLE</title>
+
+</head>
+<body>
+
+<h1 align=center>FASTQ-SAMPLE</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+
+<hr>
+
+
+<a name="NAME"></a>
+<h2>NAME</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">fastq-sample -
+sample random reads from a fastq file</p>
+
+<a name="SYNOPSIS"></a>
+<h2>SYNOPSIS</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>fastq-sample
+[OPTION]... FILE [FILE2]</b></p>
+
+<a name="DESCRIPTION"></a>
+<h2>DESCRIPTION</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Given a FASTQ
+file, random reads are sampled and output, with or without
+replacement, according to the &rsquo;-r&rsquo; option. The
+number of reads to sample can be specifed with the
+&rsquo;-n&rsquo; option, or in terms of the proportion of
+total reads using &rsquo;-p&rsquo; option.</p>
+
+<p style="margin-left:11%; margin-top: 1em">If two files
+are given, the input is treated as paired-end, and matching
+pairs are sampled and output into seperate files:
+[prefix].1.fastq and [prefix].2.fastq, where [prefix] is set
+with the &rsquo;-o&rsquo; option.</p>
+
+<a name="OPTIONS"></a>
+<h2>OPTIONS</h2>
+
+
+<table width="100%" border=0 rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="6%">
+
+
+<p style="margin-top: 1em" valign="top"><b>&minus;n
+N</b></p> </td>
+<td width="5%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">The number of reads
+to sample and output</p></td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="6%">
+
+
+<p style="margin-top: 1em" valign="top"><b>&minus;p
+N</b></p> </td>
+<td width="5%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em" valign="top">The number of reads
+to sample in terms of the proportion of total reads. If
+sampling with replacement, this number may be greater than
+1.0.</p> </td>
+</table>
+
+<p style="margin-left:11%;"><b>&minus;o</b>,
+<b>&minus;&minus;output=PREFIX</b></p>
+
+<p style="margin-left:22%;">The filename prefix to which
+output should be written. If single-end data is being
+sampled, the output file is [PREFIX].fastq, and with
+paired-end, [PREFIX].1.fastq and [PREFIX].2.fastq.
+(Default:</p>
+
+<p style="margin-left:11%;"><b>&minus;r</b>,
+<b>&minus;&minus;with&minus;replacement</b></p>
+
+<p style="margin-left:22%;">Sample with replacement. (By
+default, sampling is done without replacement.)</p>
+
+<p style="margin-left:11%;"><b>&minus;c</b>,
+<b>&minus;&minus;complement-output=PREFIX</b></p>
+
+<p style="margin-left:22%;">Output reads not included in
+the random sample to a file (or files) with the given
+prefix. By default, these reads are not output.</p>
+
+<p style="margin-left:11%;"><b>&minus;s</b>,
+<b>&minus;&minus;seed</b></p>
+
+<p style="margin-left:22%;">Seed the random number
+generator. Using the same seed on the same data set will
+produce the same random sample.</p>
+
+<p style="margin-left:11%;"><b>&minus;h</b>,
+<b>&minus;&minus;help</b></p>
+
+<p style="margin-left:22%;">Output a help message and
+exit.</p>
+
+<p style="margin-left:11%;"><b>&minus;V</b>,
+<b>&minus;&minus;version</b></p>
+
+<p style="margin-left:22%;">Output version information and
+exit.</p>
+
+<a name="AUTHOR"></a>
+<h2>AUTHOR</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Written by
+Daniel C. Jones &lt;dcjones@cs.washington.edu&gt;</p>
+<hr>
+</body>
+</html>
